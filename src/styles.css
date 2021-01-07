@@ -80,11 +80,42 @@ body > app-root > div > app-home > main > section > ul{
   text-align-last: start;
 }
 
+body > app-root > app-navbar > nav {
+  width: initial;
+}
+
 @media (min-width: 1200px) {
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: max-content;
 }
 }
 
+@media (max-width: 768px) {
+  body > app-root > div > app-personagens-lista > main > section > h1 {
+    text-align: center;
+  }
+  .navbar{
+    width: 100%;
+    min-width: 109.5%;
+  }
+  section > .title {
+    font-family: liberation-sans,sans-serif;
+    font-style: normal;
+    margin: 0px;
+    color: rgb(32, 35, 41);
+    border: none;
+    margin-top: -17.5rem;
+    /* margin-bottom: 8rem; */
+    font-weight: 900;
+    z-index: 1;
+    font-size: 4.625rem;
+}
+main {
+  margin-top: 1.8rem;
+}
+.collapse:not(.show) {
+  display: flex;
+}
+}
 
 

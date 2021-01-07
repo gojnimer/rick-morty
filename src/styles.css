@@ -1,6 +1,11 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url("https://use.typekit.net/yrt4scv.css");
 
+html {
+  overflow-x: hidden !important;
+  background: fixed !important;
+}
+
 section {
   text-align-last: center;
 }
@@ -16,6 +21,7 @@ section > .title {
   font-weight: 900;
   z-index: 1;
   font-size: 5.625rem;
+  overflow: hidden;
 }
 
 .main-home {

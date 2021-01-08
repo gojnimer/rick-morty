@@ -12,8 +12,8 @@ export class PersonagensService {
 
   constructor(private http: HttpClient) { }
 
-  getPersonagens() {
-    return this.http.get<Personagem[]>(this.API)
+  getPersonagens(url = null) {
+    return this.http.get<Personagem[]>(url || this.API)
       .pipe(
         tap(console.log)
       )
